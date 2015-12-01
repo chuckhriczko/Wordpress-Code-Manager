@@ -1,0 +1,86 @@
+.code-manager-container{
+								
+}
+.code-manager-container .code-manager-code-item{
+								
+}
+.code-manager-container aside{
+				float: right;
+    margin: 50px 0 0;
+    position: fixed;
+    right: 10%;
+}
+.code-manager-container .code-manager-code-list{
+				float: left;
+    width: 80%;
+}
+
+/* Code Detail Styles */
+#code-detail-body h3,
+#code-detail-body h4,
+#code-detail-body h5,
+#code-detail-body h6{ font-weight: bold; }
+#code-detail-body ul,
+#code-detail-body ol{
+				margin-bottom: 10px;
+				padding: 0 0 0 15px;
+}
+#code-detail-body h2{
+				float: none;
+				width: 100%;
+}
+#code-detail-body h2 .code-detail-technologies{ float: right; }
+#code-detail-body h2 .code-detail-technologies h3{
+				color: #555;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 11px 0 0;
+				text-shadow: 0;
+}
+#code-detail-body h2 .code-detail-technologies ul{
+				float: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+#code-detail-body h2 .code-detail-technologies ul li{ margin-right: 5px; }
+#code-detail-body h2 .code-detail-technologies ul li:last-of-type{ margin-right: 0; }
+#code-detail-body .code-detail-text{ clear: right; }
+#code-detail-body .code-detail-header{ margin: 20px 0 0; }
+#code-detail-docs{ clear: both; }
+#code-detail-body h3{ font-weight: 400; }
+/*.code-manager-container .code-manager-code-item h3{
+				background: #999;
+				border-radius: 7px 7px 0 0;
+				box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 100;
+				width: 40%;
+    padding: 10px 15px;
+    position: relative;
+}
+.code-manager-container .code-manager-code-item h3 a{ color: #fff; }
+.code-manager-container .code-manager-code-item h3 .code-manager-header-icons{
+				position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.code-manager-container .code-manager-code-item h3 .code-manager-header-icons img{ margin: 0 10px 0 0; }
+.code-manager-container .code-manager-code-item h3 .code-manager-header-icons img:last-of-type{ margin: 0; }
+.code-manager-container .code-manager-code-item .code-manager-code-description{
+				background: #e1e1e1;
+				box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.75);
+    min-height: 100px;
+    padding: 10px 15px;
+    position: relative;
+    width: 40%;
+}
+.code-manager-container .code-manager-code-item .code-manager-view-code-links{
+				bottom: 15px;
+				color: #555;
+				display: block;
+				position: absolute;
+}
+.code-manager-container .code-manager-code-item .code-manager-view-code-links a{ color: #555; }*/

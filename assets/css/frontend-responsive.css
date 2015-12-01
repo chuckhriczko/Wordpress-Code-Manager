@@ -1,0 +1,5 @@
+@media screen 
+  and (max-width: 640px) {
+    .code-manager-container .code-manager-code-item h3,
+    .code-manager-container .code-manager-code-item .code-manager-code-description{ width: 100%; }
+}

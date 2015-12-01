@@ -1,0 +1,1 @@
+<?php wp_editor($docs, 'code-manager-docs-editor'); ?>
