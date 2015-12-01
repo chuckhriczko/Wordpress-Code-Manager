@@ -50,37 +50,12 @@
 #code-detail-body .code-detail-header{ margin: 20px 0 0; }
 #code-detail-docs{ clear: both; }
 #code-detail-body h3{ font-weight: 400; }
-/*.code-manager-container .code-manager-code-item h3{
-				background: #999;
-				border-radius: 7px 7px 0 0;
-				box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    color: #fff;
-    font-size: 26px;
-    font-weight: 100;
-				width: 40%;
-    padding: 10px 15px;
-    position: relative;
+#code-detail-body a.code-manager-link{
+				display: inline-block;
+				height: 32px;
+				margin: 0 10px 0 0;
+				text-indent: -9999px;
+				width: 32px;
 }
-.code-manager-container .code-manager-code-item h3 a{ color: #fff; }
-.code-manager-container .code-manager-code-item h3 .code-manager-header-icons{
-				position: absolute;
-    right: 15px;
-    top: 12px;
-}
-.code-manager-container .code-manager-code-item h3 .code-manager-header-icons img{ margin: 0 10px 0 0; }
-.code-manager-container .code-manager-code-item h3 .code-manager-header-icons img:last-of-type{ margin: 0; }
-.code-manager-container .code-manager-code-item .code-manager-code-description{
-				background: #e1e1e1;
-				box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.75);
-    min-height: 100px;
-    padding: 10px 15px;
-    position: relative;
-    width: 40%;
-}
-.code-manager-container .code-manager-code-item .code-manager-view-code-links{
-				bottom: 15px;
-				color: #555;
-				display: block;
-				position: absolute;
-}
-.code-manager-container .code-manager-code-item .code-manager-view-code-links a{ color: #555; }*/
+#code-detail-body a.code-manager-download-link{ background: transparent url("../images/download-icon.png") no-repeat left top; }
+#code-detail-body a.code-manager-github-link{ background: transparent url("../images/github-icon.png") no-repeat left top; }

@@ -445,6 +445,7 @@ class Code_Manager {
 												//Update the post meta data
             if (isset($_POST['code-manager-tpl']) && !empty($_POST['code-manager-tpl'])) update_post_meta($post_id, 'code-manager-tpl', $_POST['code-manager-tpl']);
 												if (isset($_POST['code-manager-zip-url']) && !empty($_POST['code-manager-zip-url'])) update_post_meta($post_id, 'code-manager-zip-url', $_POST['code-manager-zip-url']);
+            if (isset($_POST['code-manager-zip-url']) && !empty($_POST['code-manager-github-link'])) update_post_meta($post_id, 'code-manager-github-link', $_POST['code-manager-github-link']);
             if (isset($_POST['code-manager-docs-editor']) && !empty($_POST['code-manager-docs-editor'])) update_post_meta($post_id, 'code-manager-docs', $_POST['code-manager-docs-editor']);
             if (isset($_POST['code-manager-images']) && !empty($_POST['code-manager-images'])) update_post_meta($post_id, 'code-manager-images', $_POST['code-manager-images']); else update_post_meta($post_id, 'code-manager-images', '');
 												if (isset($_POST['code-manager-featured-image']) && !empty($_POST['code-manager-featured-image'])) update_post_meta($post_id, 'code-manager-featured-image', $_POST['code-manager-featured-image']);

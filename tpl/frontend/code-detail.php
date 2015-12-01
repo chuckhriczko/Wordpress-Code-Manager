@@ -21,10 +21,11 @@ get_header();
 							?><li><img src="<?php echo $code_manager->plugin_uri; ?>/assets/images/<?php echo $type->slug; ?>.png" alt="<?php echo $type->name; ?>" title="<?php echo $type->name; ?>" /></li><?php
 						}
 						?>
+						<?php echo !empty($post->meta['code-manager-zip-url']) ? '<li><a title="Download Code" class="code-manager-link code-manager-download-link" href="'.$post->meta['code-manager-zip-url'].'" target="_blank">Download Code</a></li>' : ''; ?>
+						<?php echo !empty($post->meta['code-manager-github-link']) ? '<li><a title="View on Github" class="code-manager-link code-manager-github-link" href="'.$post->meta['code-manager-github-link'].'" target="_blank">View on Github</a></li>' : ''; ?>
 					</ul>
 				</span>
 			</h2>
-			<div class="code-detail-links"><a href="<?php echo $post->meta['code-manager-zip-url']; ?>" target="_blank">Download Code</a></div>
 			<div class="code-detail-text">
 				<?php echo apply_filters('the_content', $post->post_content); ?>
 				<h3 class="code-detail-header">Screenshots:</h3>

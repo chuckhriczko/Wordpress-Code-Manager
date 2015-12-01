@@ -12,6 +12,8 @@ $custom_tpl = get_post_meta($post->ID, 'code-manager-tpl', true);
 								}
 				?>
 </select>
+<label for="code-manager-github-link">Github Link</label>
+<input type="text" id="code-manager-github-link" name="code-manager-github-link" value="<?php echo isset($data['code-manager-github-link']) ? $data['code-manager-github-link'] : ''; ?>" />
 <label for="code-manager-zip">Code File</label>
 <input type="text" id="code-manager-zip-url" name="code-manager-zip-url" value="<?php echo isset($data['code-manager-zip-url']) ? $data['code-manager-zip-url'] : ''; ?>" />
 <input type="button" id="code-manager-zip-choose" name="code-manager-zip-choose" value="..." />
