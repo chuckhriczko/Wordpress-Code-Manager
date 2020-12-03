@@ -1,5 +1,5 @@
 .code-manager-container{
-								
+						padding: 3em 1em;		
 }
 .code-manager-container .code-manager-code-item{
 								
@@ -16,6 +16,7 @@
 }
 
 /* Code Detail Styles */
+section#code-detail-body{ padding 3em 1em !important; }
 #code-detail-body h3,
 #code-detail-body h4,
 #code-detail-body h5,

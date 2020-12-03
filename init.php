@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Code Manager
-Plugin URI: http://www.relativelystatic.com
+Plugin URI: http://www.chucksplayground.com
 Description: Allows adding and managing of source code to a Wordpress website
 Version: 1.0
-Author: Charles Hriczko
-Author URI: http://www.relativelystatic.com
+Author: Chuck Hriczko
+Author URI: http://www.chucksplayground.com
 License: GPLv2
 */
 require_once('lib/constants.php');

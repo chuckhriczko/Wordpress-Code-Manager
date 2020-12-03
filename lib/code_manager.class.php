@@ -279,7 +279,7 @@ class Code_Manager {
 				public function template_include($template){
 								global $post;
         
-        //Get the subpage
+								//Get the subpage
         $subpage = get_query_var('subpage');
         
         //Verify we have a subpage to load
@@ -291,24 +291,15 @@ class Code_Manager {
 								//Generate paths for different templates
 								$plugin_tpl = $this->plugin_path.'/tpl/frontend/code-detail'.($subpage ? '-'.$subpage : '').'.php';
         
-        //For the theme template, check if there is a custom template set first. If not, then we get the subpage template
-								$theme_tpl = !empty($custom_tpl) && file_exists($custom_tpl) ? $custom_tpl : get_template_directory().'/tpl/code-manager/'.(empty($subpage) ? 'code-detail' : get_query_var('code').'-'.($subpage ? $subpage : '')).'.php';
-        
-        //If all else fails, we load the default single page template from the theme
-								$theme_single_tpl = get_template_directory().'/single.php';
-        
-        //Add meta data to post
-        $post->meta = $this->model->get_code_meta($post->ID);
-        
+								//Add meta data to post
+								$post->meta = $this->model->get_code_meta($post->ID);
+								
 								//Determine which template to override
 								switch(basename($template)){
 												case 'single.php':
-																//Set the template depending on which file exists first. Order is as follows:
-																//1 - Theme template file
-																//2 - Plugin template file
-																//3 - Default theme single.php page
-																$template = file_exists($theme_tpl) ? $theme_tpl : (file_exists($plugin_tpl) ? $plugin_tpl : $theme_single_tpl);
-																break;
+												case 'singular.php':
+																$template = empty($custom_tpl) ? $plugin_tpl : $custom_tpl;
+																break; 
 								}
                                                         
 								return $template;
