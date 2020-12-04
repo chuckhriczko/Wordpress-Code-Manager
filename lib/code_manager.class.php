@@ -278,28 +278,31 @@ class Code_Manager {
 				 ******************************************************************************/
 				public function template_include($template){
 								global $post;
-        
-								//Get the subpage
-        $subpage = get_query_var('subpage');
-        
-        //Verify we have a subpage to load
-        $subpage = empty($subpage) ? false : $subpage;
-        
-        //Check if this post has a specific template assigned
-        $custom_tpl = get_post_meta($post->ID, 'code-manager-tpl', true);
-        
-								//Generate paths for different templates
-								$plugin_tpl = $this->plugin_path.'/tpl/frontend/code-detail'.($subpage ? '-'.$subpage : '').'.php';
-        
-								//Add meta data to post
-								$post->meta = $this->model->get_code_meta($post->ID);
 								
-								//Determine which template to override
-								switch(basename($template)){
-												case 'single.php':
-												case 'singular.php':
-																$template = empty($custom_tpl) ? $plugin_tpl : $custom_tpl;
-																break; 
+								//Make sure we are only affecting 'code' post types
+								if ($post->post_type=='code'){
+									//Get the subpage
+									$subpage = get_query_var('subpage');
+									
+									//Verify we have a subpage to load
+									$subpage = empty($subpage) ? false : $subpage;
+									
+									//Check if this post has a specific template assigned
+									$custom_tpl = get_post_meta($post->ID, 'code-manager-tpl', true);
+									
+									//Generate paths for different templates
+									$plugin_tpl = $this->plugin_path.'/tpl/frontend/code-detail'.($subpage ? '-'.$subpage : '').'.php';
+			
+									//Add meta data to post
+									$post->meta = $this->model->get_code_meta($post->ID);
+									
+									//Determine which template to override
+									switch(basename($template)){
+													case 'single.php':
+													case 'singular.php':
+																	$template = empty($custom_tpl) ? $plugin_tpl : $custom_tpl;
+																	break; 
+									}
 								}
                                                         
 								return $template;
